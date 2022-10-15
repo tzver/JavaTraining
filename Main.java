@@ -49,6 +49,13 @@ public class Main {
 
         System.out.println("The side of B is " + triangleB.sideLenOne);
         System.out.println("Number of sides to a triangle is " + Triangle.numOfSides);
+
+        StudentProfile studentA = new StudentProfile("Tisa", "Zver", 2024, 4.0, "Art");
+        StudentProfile studentB = new StudentProfile("Tara", "Zver", 2022, 4.0, "Math");
+        studentA.incrementGraduationYear();
+
+        System.out.println(studentA.firstName + " will graduate the year later, " + studentA.yearOfGraduation);
+
     }
 
 }
