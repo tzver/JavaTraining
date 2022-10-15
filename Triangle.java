@@ -6,6 +6,7 @@ public class Triangle {
     double sideLenOne;
     double sideLenTwo;
     double sideLenThree;
+    static int numOfSides = 3;
 
     public Triangle(double base, double height,
             double sideLenOne,

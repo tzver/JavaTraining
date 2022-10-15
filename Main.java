@@ -48,6 +48,7 @@ public class Main {
         System.out.println("The side of A is " + triangleA.sideLenOne);
 
         System.out.println("The side of B is " + triangleB.sideLenOne);
+        System.out.println("Number of sides to a triangle is " + Triangle.numOfSides);
     }
 
 }
