@@ -35,9 +35,19 @@ public class Main {
         // announceDeveloperTeaTime();
         // double groupTotalMealCost = totalMealCost(25, 2, 0.08);
         // System.out.println("Every person owes " + groupTotalMealCost / 3 + " euro.");
-        double yearlyWage = calculateSalary(40, 20, 23);
-        System.out.println("The employee makes " + yearlyWage + " euro per year.");
+        // double yearlyWage = calculateSalary(40, 20, 23);
+        // System.out.println("The employee makes " + yearlyWage + " euro per year.");
 
+        Triangle triangleA = new Triangle(15, 8, 5, 2, 6);
+        Triangle triangleB = new Triangle(5, 18, 2, 4, 5);
+
+        double triangleAarea = triangleA.findArea();
+        double triangleBarea = triangleB.findArea();
+        System.out.println(
+                "The area of triangle A is " + triangleAarea + " and the area of triangle B is " + triangleBarea + ".");
+        System.out.println("The side of A is " + triangleA.sideLenOne);
+
+        System.out.println("The side of B is " + triangleB.sideLenOne);
     }
 
 }
