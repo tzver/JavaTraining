@@ -15,7 +15,7 @@ public class Main {
         Scanner input = new Scanner(System.in);
         double GPA = input.nextDouble();
         gpa = GPA;
-        System.out.println(firstName + " " + lastName + " has a GPA of " + gpa);
+        System.out.println(firstName + " " + lastName + " has a GPA of " + gpa + ".");
 
     }
 }
