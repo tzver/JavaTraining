@@ -14,16 +14,19 @@ public class Main {
 
     }
 
-    public static void totalMealCost(double mealPrice, double tipRate, double taxRate) {
+    public static double totalMealCost(double mealPrice, double tipRate, double taxRate) {
         double tip = tipRate * mealPrice;
         double tax = taxRate * mealPrice;
         double result = mealPrice + tip + tax;
         System.out.println("Your total meal price is " + result);
+        return result;
     }
 
     public static void main(String args[]) {
         // announceDeveloperTeaTime();
-        totalMealCost(25, 2, 0.08);
+        double groupTotalMealCost = totalMealCost(25, 2, 0.08);
+        System.out.println("Every person owes " + groupTotalMealCost / 3 + " euro.");
+
     }
 
 }
