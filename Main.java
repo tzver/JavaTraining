@@ -22,10 +22,21 @@ public class Main {
         return result;
     }
 
+    public static double calculateSalary(int numberOfHoursPerWeek, double hourlyWage, int vacationDays) {
+        int nrWeeksInYear = 52;
+        double yearlyWageWithoutHoliday = nrWeeksInYear * numberOfHoursPerWeek * hourlyWage;
+        double yearlyWageWithHoliday = yearlyWageWithoutHoliday - vacationDays * 8 * hourlyWage;
+
+        return yearlyWageWithHoliday;
+
+    }
+
     public static void main(String args[]) {
         // announceDeveloperTeaTime();
-        double groupTotalMealCost = totalMealCost(25, 2, 0.08);
-        System.out.println("Every person owes " + groupTotalMealCost / 3 + " euro.");
+        // double groupTotalMealCost = totalMealCost(25, 2, 0.08);
+        // System.out.println("Every person owes " + groupTotalMealCost / 3 + " euro.");
+        double yearlyWage = calculateSalary(40, 20, 23);
+        System.out.println("The employee makes " + yearlyWage + " euro per year.");
 
     }
 
